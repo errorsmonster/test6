@@ -25,7 +25,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('👻 ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ', url="https://t.me/i_Movieee"),
+                    InlineKeyboardButton('👻 ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ', url="https://t.me/Latest_movies_freeOnNet"),
                     InlineKeyboardButton('🫨 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('🔻 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔻', url=CHNL_LNK)
@@ -152,7 +152,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton("✨ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ✨", url="https://t.me/+4nzja42ELQwzOWVl")
+                          InlineKeyboardButton("✨ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ✨", url="https://t.me/Mix_Cinema_Box")
                          ]
                         ]
                     )
@@ -168,7 +168,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton("✨ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ✨", url="https://t.me/+4nzja42ELQwzOWVl")
+                          InlineKeyboardButton("✨ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ✨", url="https://t.me/Mix_Cinema_Box")
                          ]
                         ]
                     )
@@ -333,7 +333,7 @@ async def start(client, message):
                             [
                                 InlineKeyboardButton('🌈 Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🌈', callback_data=f'gen_stream_link:{file_id}'),
                             ],[
-                                InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ✨", url="https://t.me/i_Movieee")
+                                InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ✨", url="https://t.me/Latest_movies_freeOnNet")
                             ]
                         ]
                     )
@@ -341,7 +341,7 @@ async def start(client, message):
                     else InlineKeyboardMarkup(
                         [
                         [
-                          InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ✨", url="https://t.me/i_Movieee")
+                          InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ✨", url="https://t.me/Latest_movies_freeOnNet")
                          ]
                         ]
                     )
@@ -401,7 +401,7 @@ async def start(client, message):
                             [
                                 InlineKeyboardButton('🌈 Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🌈', callback_data=f'gen_stream_link:{file_id}'),
                             ],[
-                                InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ✨", url="https://t.me/i_Movieee")
+                                InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ✨", url="https://t.me/Latest_movies_freeOnNet")
                             ]
                         ]
                     )
@@ -409,7 +409,7 @@ async def start(client, message):
                     else InlineKeyboardMarkup(
                         [
                         [
-                          InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ✨", url="https://t.me/i_Movieee")
+                          InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ✨", url="https://t.me/Latest_movies_freeOnNet")
                          ]
                         ]
                     )
