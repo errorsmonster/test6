@@ -13,21 +13,21 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '28284211'))
-API_HASH = environ.get('API_HASH', '6b0afc140b8534c45de9dc77b7d37415')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5634679884:AAH6KjE4JbS5rD3ljyZSJZJx6I-rbz5WYG4")
+API_ID = int(environ.get('API_ID', '29127726'))
+API_HASH = environ.get('API_HASH', 'b25483bdec0d64a73899ee8ede66cd40')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6391824685:AAEX4JB0qLFuH5IvDpXcXFLQiwps3QVuez8")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/7215c7831b4ae88897448.jpg https://telegra.ph/file/34f3bd6b0cda5bb9b0cca.jpg https://telegra.ph/file/724bdd44693500c024ec7.jpg https://telegra.ph/file/1b39388dd4a343cc325bc.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://te.legra.ph/file/6f55d902f9bf2d0afd4bb.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
+PICS = (environ.get('PICS', 'https://telegra.ph/Mix-cinema-Box-01-31 https://telegra.ph/TVF-TRIPPLLING-3-10-24 https://telegra.ph/Black-adaam-10-20 https://telegra.ph/%E0%A4%A4%E0%A4%A4TT-01-31')).split()
+NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/%E0%A4%A4%E0%A4%A4TT-01-31")
+MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/Video-01-31-22")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/%E0%A4%A4%E0%A4%A4TT-01-31")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5791145987 6597445442 5764988016').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1985196029').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -48,7 +48,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #stream feauter
-STREAM_BIN = environ.get("STREAM_BIN", "-1001953206885") #Log channel/Bin Channel id -100xxxxxxx
+STREAM_BIN = environ.get("STREAM_BIN", "-1001572383457") #Log channel/Bin Channel id -100xxxxxxx
 STREAM_URL = environ.get("STREAM_URL", "") # https://example.com/ (Your Stream Url)
 IS_STREAM = bool(STREAM_BIN and STREAM_URL)
 #Use this feature, if you have deployed file to link bot. paste the app url with stream url and add filter bot as admin in bin channel and add id in stream bin
@@ -57,7 +57,7 @@ IS_STREAM = bool(STREAM_BIN and STREAM_URL)
 VERIFY = bool(environ.get('VERIFY', True))
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/Howto_openlink_0')
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omnifly.in.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', '16391e00aebfad25b243edf7e0034eea4fad7325')
+SHORTLINK_API = environ.get('SHORTLINK_API', '16391e00aebfad25b243edf7e0034eea4ad7325')
 SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'omnifly.in.net')
 SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '16391e00aebfad25b243edf7e0034eea4fad7325')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
@@ -65,12 +65,12 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+M58gfU0jDOc3YjFl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/bot_channel_011')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+W5plh7_tP19lZjg1')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Mix_Cinema_Box')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Ex_Mr_R')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Ex_Mr_R')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001953206885'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001801990402'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Action_Movies_Group')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
