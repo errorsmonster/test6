@@ -543,24 +543,15 @@ async def get_shortlink(chat_id, link, second=False):
     ):
         URL = SECOND_SHORTLINK_URL
         API = SECOND_SHORTLINK_API
-    if URL == "api.shareus.io":
+    if URL == "_":
         # method 1:
         # https = link.split(":")[0] #splitting https or http from link
         # if "http" == https: #if https == "http":
         #     https = "https"
         #     link = link.replace("http", https) #replacing http to https
-        # conn = http.client.HTTPSConnection("api.shareus.io")
+        # conn = http.client.HTTPSConnection("_")
         # payload = json.dumps({
-        #   "api_key": "4c1YTBacB6PTuwogBiEIFvZN5TI3",
-        #   "monetization": True,
-        #   "destination": link,
-        #   "ad_page": 3,
-        #   "category": "Entertainment",
-        #   "tags": ["trendinglinks"],
-        #   "monetize_with_money": False,
-        #   "price": 0,
-        #   "currency": "INR",
-        #   "purchase_note":""
+        #   "api_key": "_",
 
         # })
         # headers = {
@@ -617,7 +608,7 @@ async def get_shortlink(chat_id, link, second=False):
 #         if "http" == https: #if https == "http":
 #             https = "https"
 #             link = link.replace("http", https) #replacing http to https
-#         if URL == "api.shareus.in":
+#         if URL == "-":
 #             url = f'https://{URL}/shortLink'
 #             params = {
 #                 "token": API,
@@ -718,7 +709,7 @@ async def get_verify_shorted_link(link):
         https = "https"
         link = link.replace("http", https)
 
-    if URL == "api.shareus.in":
+    if URL == "_":
         url = f"https://{URL}/shortLink"
         params = {
             "token": API,
@@ -820,13 +811,6 @@ async def send_all(bot, userid, files, ident):
                     url=await get_token(
                         bot,
                         userid,
-                        f"https://telegram.me/{temp.U_NAME}?start=",
-                        "send_all",
-                    ),
-                ),
-                InlineKeyboardButton("Hᴏᴡ Tᴏ Vᴇʀɪғʏ", url=HOW_TO_VERIFY),
-            ]
-        ]
         await bot.send_message(
             chat_id=userid,
             text="<b>Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ!\nKɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ Sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴀᴄᴄᴇss ᴛᴏ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs ᴜɴᴛɪʟ 12 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ !</b>",
@@ -860,8 +844,8 @@ async def send_all(bot, userid, files, ident):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url=GRP_LNK),
-                            InlineKeyboardButton("Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=CHNL_LNK),
+                            InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/Mix_Cinema_Box"),
+                            InlineKeyboardButton("Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url="https://t.me/Latest_movies_freeOnNet"),
                         ],
                         [InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Titanoboa_team")],
                     ]
@@ -967,8 +951,8 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url=GRP_LNK),
-                                InlineKeyboardButton("Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=CHNL_LNK),
+                                InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/Mix_Cinema_Box"),
+                                InlineKeyboardButton("Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url="https://t.me/Latest_movies_freeOnNet"),
                             ],
                             [InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Titanoboa_team")],
                         ]
@@ -1009,8 +993,8 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/Mix_Cinema_Box"),
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/Latest_movies_freeOnNet")
                     ],[
                         InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Titanoboa_team")
                         ]
